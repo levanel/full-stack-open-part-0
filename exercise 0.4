@@ -26,3 +26,8 @@ sequenceDiagram
     activate server
     server-->browser: ico file
     deactivate server
+
+    browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
+    activate server
+    server-->>browser: new HTML document
+    deactivate server
